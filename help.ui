@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Help</class>
+ <widget class="QDialog" name="Help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>689</width>
+    <height>752</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Help - SAR-BIO</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>700</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Close</set>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>631</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>629</width>
+      <height>619</height>
+     </rect>
+    </property>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>611</width>
+       <height>601</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt; font-weight:600; background-color:#ffffff;&quot;&gt;About SAR-BIO Plug-in:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt; color:#000000; background-color:#ffffff;&quot;&gt;The &amp;quot;SAR-BIO &amp;quot; plug-in  will predict the crop yield and Biomass for multi temporal SAR imagery. This tool is executed through the python console in QGIS. Further, this tool evaluates the accuracy metrics of the obtained crop yield and biomass values with reference to the ground truth data. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt; font-weight:600; background-color:#ffffff;&quot;&gt;Input Fields:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;table border=&quot;1&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td width=&quot;25%&quot; style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt; font-weight:600;&quot;&gt;Input&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td width=&quot;59%&quot; style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt; font-weight:600;&quot;&gt;Description&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td width=&quot;15%&quot; style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt; font-weight:600;&quot;&gt;Formats&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;Algorithm&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt; color:#000000; background-color:#ffffff;&quot;&gt;User has to select either Random Forest (RF) or Support Vector Machine (SVM) Regression algorithms to perform yield prediction&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;User Choice&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;Input Rasters - VV&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt; color:#000000; background-color:#ffffff;&quot;&gt;Select multiple SAR satellite imagery (VV) of various dates as input&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;.tif&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;Input Rasters - VH&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt; color:#000000; background-color:#ffffff;&quot;&gt;Select multiple SAR satellite imagery (VH) of various dates as input&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;.tif&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;Classified Parcels&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt; color:#000000; background-color:#ffffff;&quot;&gt;Takes the classified map obtained from “ML-CLAS” or any other reference crop parcel maps. SITS(VV/VH) will be clipped to this extent and zonal statistics will be computed to perform the Yield Prediction at parcel level. &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;.shp&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;GCPs&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;User can give training dataset with following ground truth
+samples information; Latitude, Longitude, Crop type, Biomass and Crop Yield&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;.csv&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;Split (%)&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;User has to specify the training and validation (testing)
+percentages. Here, we need to provide the % of classes in each category, which goes for testing&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;integer&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;Output folder&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt; color:#000000; background-color:#ffffff;&quot;&gt;A directory path where all the processed files, generated reports of crop yield prediction will be stored.&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;Directory Path&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt; font-weight:600;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-family:'Arial,sans-serif'; font-size:10pt;&quot;&gt;After successful execution of this tool, Predicted Yield and Biomass values will be saved in the output folder.&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>431</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Help - SAR-BIO Plug-in</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Help</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>538</x>
+     <y>714</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Help</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>606</x>
+     <y>720</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>YieldEstimatorDialogBase</class>
+
+ <widget class="QDialog" name="YieldEstimatorDialogBase">
+
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>560</height>
+   </rect>
+  </property>
+
+  <property name="windowTitle">
+   <string>SAR-BIO</string>
+  </property>
+
+  <!-- ========================================= -->
+  <!-- COORDINATES -->
+  <!-- ========================================= -->
+
+  <widget class="QLabel" name="labelMinX">
+   <property name="geometry">
+    <rect><x>40</x><y>20</y><w>80</w><h>22</h></rect>
+   </property>
+   <property name="text">
+    <string>Min X</string>
+   </property>
+  </widget>
+
+  <widget class="QLineEdit" name="leMinX">
+   <property name="geometry">
+    <rect><x>120</x><y>20</y><w>220</w><h>24</h></rect>
+   </property>
+  </widget>
+
+  <widget class="QLabel" name="labelMinY">
+   <property name="geometry">
+    <rect><x>390</x><y>20</y><w>80</w><h>22</h></rect>
+   </property>
+   <property name="text">
+    <string>Min Y</string>
+   </property>
+  </widget>
+
+  <widget class="QLineEdit" name="leMinY">
+   <property name="geometry">
+    <rect><x>470</x><y>20</y><w>220</w><h>24</h></rect>
+   </property>
+  </widget>
+
+  <widget class="QLabel" name="labelMaxX">
+   <property name="geometry">
+    <rect><x>40</x><y>60</y><w>80</w><h>22</h></rect>
+   </property>
+   <property name="text">
+    <string>Max X</string>
+   </property>
+  </widget>
+
+  <widget class="QLineEdit" name="leMaxX">
+   <property name="geometry">
+    <rect><x>120</x><y>60</y><w>220</w><h>24</h></rect>
+   </property>
+  </widget>
+
+  <widget class="QLabel" name="labelMaxY">
+   <property name="geometry">
+    <rect><x>390</x><y>60</y><w>80</w><h>22</h></rect>
+   </property>
+   <property name="text">
+    <string>Max Y</string>
+   </property>
+  </widget>
+
+  <widget class="QLineEdit" name="leMaxY">
+   <property name="geometry">
+    <rect><x>470</x><y>60</y><w>220</w><h>24</h></rect>
+   </property>
+  </widget>
+
+  <!-- ========================================= -->
+  <!-- ALGORITHM -->
+  <!-- ========================================= -->
+
+  <widget class="QLabel" name="labelAlgorithm">
+   <property name="geometry">
+    <rect><x>40</x><y>110</y><w>100</w><h>24</h></rect>
+   </property>
+   <property name="text">
+    <string>Algorithm</string>
+   </property>
+  </widget>
+
+  <widget class="QComboBox" name="cbAlgorithm">
+   <property name="geometry">
+    <rect><x>180</x><y>110</y><w>220</w><h>24</h></rect>
+   </property>
+
+   <item>
+    <property name="text">
+     <string>Support Vector Machine Regressor</string>
+    </property>
+   </item>
+
+   <item>
+    <property name="text">
+     <string>Random Forest Regressor</string>
+    </property>
+   </item>
+
+  </widget>
+
+  <!-- ========================================= -->
+  <!-- VV -->
+  <!-- ========================================= -->
+
+  <widget class="QLabel" name="labelVV">
+   <property name="geometry">
+    <rect><x>40</x><y>160</y><w>130</w><h>24</h></rect>
+   </property>
+   <property name="text">
+    <string>Input Rasters - VV</string>
+   </property>
+  </widget>
+
+  <widget class="QLineEdit" name="leVV">
+   <property name="geometry">
+    <rect><x>180</x><y>160</y><w>450</w><h>24</h></rect>
+   </property>
+  </widget>
+
+  <widget class="QPushButton" name="pbVV">
+   <property name="geometry">
+    <rect><x>650</x><y>160</y><w>40</w><h>24</h></rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+
+  <!-- ========================================= -->
+  <!-- VH -->
+  <!-- ========================================= -->
+
+  <widget class="QLabel" name="labelVH">
+   <property name="geometry">
+    <rect><x>40</x><y>205</y><w>130</w><h>24</h></rect>
+   </property>
+   <property name="text">
+    <string>Input Rasters - VH</string>
+   </property>
+  </widget>
+
+  <widget class="QLineEdit" name="leVH">
+   <property name="geometry">
+    <rect><x>180</x><y>205</y><w>450</w><h>24</h></rect>
+   </property>
+  </widget>
+
+  <widget class="QPushButton" name="pbVH">
+   <property name="geometry">
+    <rect><x>650</x><y>205</y><w>40</w><h>24</h></rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+
+  <!-- ========================================= -->
+  <!-- SHAPEFILE -->
+  <!-- ========================================= -->
+
+  <widget class="QLabel" name="labelShape">
+   <property name="geometry">
+    <rect><x>40</x><y>250</y><w>130</w><h>24</h></rect>
+   </property>
+   <property name="text">
+    <string>Classified Parcels</string>
+   </property>
+  </widget>
+
+  <widget class="QLineEdit" name="leClassified">
+   <property name="geometry">
+    <rect><x>180</x><y>250</y><w>450</w><h>24</h></rect>
+   </property>
+  </widget>
+
+  <widget class="QPushButton" name="pbClassified">
+   <property name="geometry">
+    <rect><x>650</x><y>250</y><w>40</w><h>24</h></rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+
+  <!-- ========================================= -->
+  <!-- FIELD SAMPLES -->
+  <!-- ========================================= -->
+
+  <widget class="QLabel" name="labelFieldSamples">
+   <property name="geometry">
+    <rect><x>40</x><y>295</y><w>130</w><h>24</h></rect>
+   </property>
+   <property name="text">
+    <string>GCPs</string>
+   </property>
+  </widget>
+
+  <widget class="QLineEdit" name="leGCP">
+   <property name="geometry">
+    <rect><x>180</x><y>295</y><w>450</w><h>24</h></rect>
+   </property>
+  </widget>
+
+  <widget class="QPushButton" name="pbGCP">
+   <property name="geometry">
+    <rect><x>650</x><y>295</y><w>40</w><h>24</h></rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+
+  <!-- ========================================= -->
+  <!-- SPLIT -->
+  <!-- ========================================= -->
+
+  <widget class="QLabel" name="labelSplit">
+   <property name="geometry">
+    <rect><x>40</x><y>340</y><w>130</w><h>24</h></rect>
+   </property>
+   <property name="text">
+    <string>Split %</string>
+   </property>
+  </widget>
+
+  <widget class="QSpinBox" name="sbSplit">
+   <property name="geometry">
+    <rect><x>180</x><y>340</y><w>120</w><h>24</h></rect>
+   </property>
+
+   <property name="minimum">
+    <number>1</number>
+   </property>
+
+   <property name="maximum">
+    <number>99</number>
+   </property>
+
+   <property name="value">
+    <number>30</number>
+   </property>
+  </widget>
+
+  <!-- ========================================= -->
+  <!-- OUTPUT -->
+  <!-- ========================================= -->
+
+  <widget class="QLabel" name="labelOutput">
+   <property name="geometry">
+    <rect><x>40</x><y>385</y><w>130</w><h>24</h></rect>
+   </property>
+   <property name="text">
+    <string>Output Folder</string>
+   </property>
+  </widget>
+
+  <widget class="QLineEdit" name="leOutput">
+   <property name="geometry">
+    <rect><x>180</x><y>385</y><w>450</w><h>24</h></rect>
+   </property>
+  </widget>
+
+  <widget class="QPushButton" name="pbOutput">
+   <property name="geometry">
+    <rect><x>650</x><y>385</y><w>40</w><h>24</h></rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+
+  <!-- ========================================= -->
+  <!-- HELP + PREDICT -->
+  <!-- ========================================= -->
+
+  <widget class="QPushButton" name="pbHelp">
+   <property name="geometry">
+    <rect><x>40</x><y>445</y><w>100</w><h>32</h></rect>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </widget>
+
+  <widget class="QPushButton" name="pbPredict">
+   <property name="geometry">
+    <rect><x>590</x><y>445</y><w>100</w><h>32</h></rect>
+   </property>
+   <property name="text">
+    <string>Predict</string>
+   </property>
+  </widget>
+
+  <!-- ========================================= -->
+  <!-- PROGRESS -->
+  <!-- ========================================= -->
+
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect><x>40</x><y>500</y><w>420</w><h>24</h></rect>
+   </property>
+
+   <property name="value">
+    <number>0</number>
+   </property>
+  </widget>
+
+  <widget class="QPushButton" name="pbReset">
+   <property name="geometry">
+    <rect><x>500</x><y>500</y><w>80</w><h>28</h></rect>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </widget>
+
+  <widget class="QPushButton" name="pbCancel">
+   <property name="geometry">
+    <rect><x>600</x><y>500</y><w>90</w><h>28</h></rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+
+ </widget>
+
+ <resources/>
+ <connections/>
+
+</ui>
